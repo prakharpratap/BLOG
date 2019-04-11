@@ -5,7 +5,13 @@ const Schema=mongoose.Schema;
 const blogSchema=new Schema({
     blog:{
         type:String,
-        required:true}
+        required:true
+    },
+        des:
+            {
+        type:String,
+            required:true
+        }
 
         },
     {
@@ -14,5 +20,5 @@ const blogSchema=new Schema({
     );
 
 
-var Blogs=mongoose.model('blogs',blogSchema);
+var Blogs = mongoose.model('blogs',blogSchema);
 module.exports=Blogs;

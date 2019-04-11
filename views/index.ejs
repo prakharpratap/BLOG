@@ -2,9 +2,14 @@
 <head></head>
 <body>
 <h1>Node Blog</h1>
-<form action="addpost" method="POST">
-    <textarea name="body"></textarea>
+
+<p><%= posts%></p>
+
+<form action="/addPost" method="post">
+    <textarea name="blog"></textarea>
+    <textarea name="des"></textarea>
     <input type="submit" value="Add Post" />
+
 </form>
 </body>
 </html>

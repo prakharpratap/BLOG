@@ -23,7 +23,8 @@ blogRouter.route('/')
             console.log('blog written',blog);
             res.statusCode=200;
             res.setHeader('Content-Type','application/json');
-            res.json(blog);
+
+            res.redirect('/');
         },function(){console.log('error in posting')})
 });
 module.exports=blogRouter;
